@@ -63,6 +63,8 @@ cd airflow-docker-compose
 docker-compose up -d
 ```
 This will start the containers for each of the services defined in the file. You can then access the Airflow web interface at http://localhost:8080.
+## Credits
+- Ricki Chan
 
 ## Contributing
 
