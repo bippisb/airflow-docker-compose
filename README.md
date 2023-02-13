@@ -54,12 +54,14 @@ The environment file (.env) contains the following variables used by the service
 
 ## Usage
 To use this Docker Compose file, simply clone this repository and run the following command in the root directory:
-## Installation
-
+## Windows Installation
 
 ```bash
 git clone https://github.com/bippisb/airflow-docker-compose.git
 cd airflow-docker-compose
+md dags
+md logs
+md plugins
 docker-compose up -d
 ```
 This will start the containers for each of the services defined in the file. You can then access the Airflow web interface at http://localhost:8080.
