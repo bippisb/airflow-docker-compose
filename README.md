@@ -62,7 +62,7 @@ cd airflow-docker-compose
 md dags
 md logs
 md plugins
-docker-compose up -d
+docker compose up -d
 ```
 This will start the containers for each of the services defined in the file. You can then access the Airflow web interface at http://localhost:8080.
 ## Credits
