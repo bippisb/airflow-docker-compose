@@ -15,13 +15,12 @@ cd airflow-docker-compose
 md dags
 md logs
 md plugins
+docker build . -f Dockerfile --pull --tag airflow-ext:0.0.1
 docker compose up -d
 ```
 The Airflow UI will be available at http://localhost:8080. The logs and DAGs directories are mapped to the host machine, allowing you to persist the logs and DAGs across restarts of the containers. The plugins directory can be used to extend the functionality of Airflow.
 ## Note
 - The default username and password are both set to airflow.
-## Credits
-- Ricki Chan
 
 ## Contributing
 
